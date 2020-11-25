@@ -24,19 +24,26 @@ class Albums extends Component{
 
     return (
       <div >
-                  <main align="center">
-                  <Mui.ButtonGroup  align="center" size="large" color="primary" aria-label="large outlined primary button group">
-                        <Mui.Button href="/posts" >Posts</Mui.Button>
-                        <Mui.Button href="/comments">Comments</Mui.Button>
-                        <Mui.Button href="/albums">Albums</Mui.Button>
-                        <Mui.Button href="/photos">Photos</Mui.Button>
-                        <Mui.Button href="/todos">Todos</Mui.Button>
-                        <Mui.Button href="/users">Users</Mui.Button>
-                  </Mui.ButtonGroup>
-                  </main>
+ <nav class="nav-extended #212121 grey darken-4">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="/">Posts</a></li>
+        <li class="tab"><a class="active" href="/comments">Comments</a></li>
+        <li class="tab"><a href="/albums">Albums</a></li>
+        <li class="tab"><a href="/photos">Photos</a></li>
+        <li class="tab"><a href="/todos">Todos</a></li>
+        <li class="tab"><a href="/users">Users</a></li>
+      </ul>
+    </div>
+  </nav>
+
           <Mui.Container fixed>
         <h1 align="center">DATA ALBUMS</h1>
-        <table border="2" align="center">
+        <table border="2" class="responsive-table">
           <tr  bgcolor="#00ff80">
             <td >USER ID</td>
             <td>ID</td>

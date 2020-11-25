@@ -12,7 +12,7 @@ function App() {
   return (
      <BrowserRouter>
           <Switch>
-              <Link path="/posts" exact component={Posts} />
+              <Link path="/" exact component={Posts} />
               <Link path="/albums" exact component={Albums} />
               <Link path="/comments" exact component={Comments} />
               <Link path="/photos" exact component={Photos} />
